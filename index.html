@@ -13,7 +13,7 @@
   <link rel="preload" as="image" href="assets/img/herolight.jpg"
         imagesrcset="assets/img/herofull.jpg 2661w, assets/img/herolight.jpg 1079w"
         imagesizes="100vw" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 <body>
   <!-- Age/ID banner -->
@@ -39,12 +39,8 @@
   </header>
 
   <main id="top">
-    <section class="hero" aria-label="Hero">
-      <picture class="hero-img" aria-hidden="true">
-        <source srcset="assets/img/herofull.jpg" media="(min-width: 768px)" />
-        <img src="assets/img/herolight.jpg" alt=""
-             width="2661" height="1497" decoding="async" fetchpriority="high" />
-      </picture>
+    <section class="hero">
+      <div class="hero-img" aria-hidden="true"></div>
       <div class="wrap">
         <div class="kicker">Neighborhood Humidor • Owner-led • Friendly Guidance</div>
         <h1>Exceptional Cigars. Zero Snobbery.</h1>
@@ -76,19 +72,24 @@
         </div>
         <div class="grid cols-3">
           <article class="card">
-            <div class="thumb">Cigar Selection</div>
+            <img src="assets/img/cigarselection1light.jpg" width="1200" height="750" loading="lazy"
+                 alt="Humidor rows of cigars — selection 1">
             <h3>Curated Sticks</h3>
             <p>From mild to full—tell us what you like; we’ll match flavor, size, and burn time.</p>
             <span class="pill">Beginner-friendly</span>
           </article>
+
           <article class="card">
-            <div class="thumb">Accessories</div>
+            <img src="assets/img/cigarselection2light.jpg" width="1200" height="750" loading="lazy"
+                 alt="Humidor rows of cigars — selection 2">
             <h3>Accessories</h3>
             <p>Cutters, torch lighters, travel cases—grab-and-go or giftable add-ons.</p>
             <span class="pill">Gift-ready</span>
           </article>
+
           <article class="card">
-            <div class="thumb">Vape & Juice</div>
+            <img src="assets/img/cigarselection3light.jpg" width="1200" height="750" loading="lazy"
+                 alt="Humidor rows of cigars — selection 3">
             <h3>Vapes (Yes, but…)</h3>
             <p>We stock popular hardware & juice—still keeping cigars center stage.</p>
             <span class="pill">One-stop shop</span>
