@@ -1,4 +1,4 @@
-<!doctype html>
+    <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -22,7 +22,9 @@
     .wrap{max-width:var(--max);margin:0 auto;padding:0 1rem}
     header{position:sticky;top:0;z-index:10;background:rgba(15,15,15,.86);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid #222}
     nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
-    .brand{font-weight:800;letter-spacing:.4px}
+    .brand{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:.4px}
+    .brand .logo{height:40px;width:auto;display:block}
+    @media (max-width:520px){.brand .logo{height:32px}}
     .brand b{color:var(--accent)}
     .nav a{margin-left:1rem;color:var(--text)}
     .btn{display:inline-block;border:1px solid var(--accent);background:var(--accent);color:#0b0b0b;padding:.75rem 1rem;border-radius:999px;font-weight:700}
@@ -62,7 +64,11 @@
   <header aria-label="Site header">
     <div class="wrap">
       <nav aria-label="Primary">
-        <div class="brand"><b>High Street</b> Smoke Shop</div>
+        <div class="brand" aria-label="High Street Smoke Shop">
+          <img class="logo" src="assets/img/logo.png" alt="High Street Smoke Shop logo"
+               width="200" height="40" decoding="async" fetchpriority="high" />
+          <span class="sr-only">High Street Smoke Shop</span>
+        </div>
         <div class="nav" role="navigation">
           <a href="#cigars">Cigars</a>
           <a href="#events">Events</a>
