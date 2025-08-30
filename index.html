@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>High Street Smoke Shop — Waterford, PA | Fine Cigars & Events</title>
+  <meta name="description" content="High Street Smoke Shop in Waterford, PA. Fine cigars, vapes & friendly guidance. On-site cigar service for golf outings and private events." />
+  <style>
+    :root{
+      --bg:#0f0f0f; --text:#f5f1e8; --muted:#b5b0a3; --accent:#c4a164; --golf:#1f513f;
+      --card:#171717; --max:1100px; --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 ui-sans-serif,system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .bar{background:#1a1a1a;padding:.55rem 1rem;text-align:center;font-size:.95rem;border-bottom:1px solid #222}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 1rem}
+    header{position:sticky;top:0;z-index:10;background:rgba(15,15,15,.86);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid #222}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
+    .brand{font-weight:800;letter-spacing:.4px}
+    .brand b{color:var(--accent)}
+    .nav a{margin-left:1rem;color:var(--text)}
+    .btn{display:inline-block;border:1px solid var(--accent);background:var(--accent);color:#0b0b0b;padding:.75rem 1rem;border-radius:999px;font-weight:700}
+    .btn.outline{background:transparent;color:var(--accent)}
+    .hero{position:relative;min-height:72vh;display:grid;align-items:center}
+    .hero::before{content:"";position:absolute;inset:0;background:
+      radial-gradient(100% 60% at 0% 100%,rgba(196,161,100,.28),transparent 60%),
+      linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.84));}
+    .hero .wrap{position:relative;z-index:1;padding:5rem 1rem}
+    .hero-img{position:absolute;inset:0;background:url('HERO-PLACEHOLDER.jpg') center/cover no-repeat;opacity:.35;filter:grayscale(10%) contrast(105%)}
+    h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin:0 0 .75rem}
+    .kicker{text-transform:uppercase;letter-spacing:.18em;color:var(--muted);font-size:.85rem}
+    .lead{max-width:45ch;color:#e8e2d7;margin:.5rem 0 1.25rem}
+    .cta{display:flex;gap:.8rem;flex-wrap:wrap}
+    section{padding:3.5rem 0;border-top:1px solid #191919}
+    h2{font-size:clamp(1.4rem,3.5vw,2rem);margin:0 0 .8rem}
+    .grid{display:grid;gap:1rem}
+    .grid.cols-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .card{background:var(--card);border:1px solid #242424;border-radius:var(--radius);padding:1rem}
+    .pill{display:inline-block;background:#143b2f;color:#d4ede4;border:1px solid #205842;border-radius:999px;padding:.25rem .6rem;font-size:.8rem}
+    .badge{display:inline-flex;align-items:center;gap:.35rem;font-weight:700;color:#ffd166}
+    .list{margin:0;padding-left:1rem;color:#ddd}
+    .review{font-style:italic;color:#eae3d7}
+    .quote{border-left:4px solid var(--accent);padding-left:.9rem;margin:.7rem 0}
+    .muted{color:var(--muted)}
+    .cols{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .small{font-size:.92rem}
+    .thumb{width:100%;aspect-ratio:16/10;border-radius:12px;background:#121212;border:1px solid #232323;display:grid;place-items:center;color:#777}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    footer{padding:2.5rem 0;color:#cfc9bb;border-top:1px solid #191919}
+  </style>
+</head>
+<body>
+  <!-- Age/ID banner -->
+  <div class="bar" role="note">🚫 21+ ONLY. We verify ID for customers under 30.</div>
+
+  <header aria-label="Site header">
+    <div class="wrap">
+      <nav aria-label="Primary">
+        <div class="brand"><b>High Street</b> Smoke Shop</div>
+        <div class="nav" role="navigation">
+          <a href="#cigars">Cigars</a>
+          <a href="#events">Events</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#visit">Visit</a>
+          <a class="btn outline" href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Hero">
+      <div class="hero-img" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="kicker">Neighborhood Humidor • Owner-led • Friendly Guidance</div>
+        <h1>Exceptional Cigars. Zero Snobbery.</h1>
+        <p class="lead">We help you pick cigars you’ll actually love—then bring that same experience to golf outings and private events. Vapes available; cigars run the show.</p>
+        <div class="cta">
+          <a class="btn" href="#cigars">Browse Cigars</a>
+          <a class="btn outline" href="#events">Book an Event</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="cigars">
+      <div class="wrap">
+        <h2>Our Cigars</h2>
+        <p class="muted">Curated selection, properly stored, and priced fair. Ask for pairings & strength recommendations.</p>
+        <div class="grid cols-3">
+          <article class="card">
+            <div class="thumb">Cigar Selection</div>
+            <h3>Curated Sticks</h3>
+            <p>From mild to full—tell us what you like; we’ll match flavor, size, and burn time.</p>
+            <span class="pill">Beginner-friendly</span>
+          </article>
+          <article class="card">
+            <div class="thumb">Accessories</div>
+            <h3>Accessories</h3>
+            <p>Cutters, torch lighters, travel cases—grab-and-go or giftable add-ons.</p>
+            <span class="pill">Gift-ready</span>
+          </article>
+          <article class="card">
+            <div class="thumb">Vape & Juice</div>
+            <h3>Vapes (Yes, but…)</h3>
+            <p>We stock popular hardware & juice—still keeping cigars center stage.</p>
+            <span class="pill">One-stop shop</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="events">
+      <div class="wrap">
+        <h2>Cigars at Your Event</h2>
+        <p class="muted">Golf outings • Fundraisers • Weddings • Corporate</p>
+        <div class="grid cols-3">
+          <div class="card"><h3 class="badge">⛳️ On the Course</h3><p>Clean, branded cigar station at the clubhouse or a signature hole. On-site cutting & hand-off.</p></div>
+          <div class="card"><h3 class="badge">🎩 VIP Bundles</h3><p>Curated bundles (mild / medium / full) with tasting notes and sponsor-ready packaging.</p></div>
+          <div class="card"><h3 class="badge">📦 Easy Logistics</h3><p>We handle quantities, weather backups, and receipts for sponsors. Simple flat-rate options.</p></div>
+        </div>
+        <div class="cta" style="margin-top:1rem">
+          <a class="btn" href="#contact">Request an Event Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="wrap">
+        <h2>What Customers Say</h2>
+
+        <!-- Hard-wired reviews -->
+        <div class="card">
+          <p class="review quote">“They always been friendly everytime I go in, they always help me pick out new Cigars and vapes… The owner is definitely really is a nice guy… I would 100% come back every time.”</p>
+          <p class="small">— Randy Piper, ★★★★★ on Google</p>
+        </div>
+
+        <div class="card">
+          <p class="review quote">“He opened for me and gave me a sample—tasty and refreshing on a hot day. We had a nice chat.”</p>
+          <p class="small">— Local Facebook comment, ★★★★★</p>
+        </div>
+
+        <div class="card">
+          <p class="review quote">“Five stars.”</p>
+          <p class="small">— Google Reviewer, ★★★★★</p>
+        </div>
+
+        <p class="small muted">Want your review featured? Leave us a note on Google.</p>
+      </div>
+    </section>
+
+    <section id="visit">
+      <div class="wrap">
+        <h2>Visit Us</h2>
+        <div class="cols">
+          <div class="card">
+            <h3>Find Us</h3>
+            <p><strong>Address:</strong> 204 High St, Waterford, PA 16441</p>
+            <div style="border:1px solid #232323;border-radius:12px;overflow:hidden">
+              <iframe title="Map to High Street Smoke Shop" width="100%" height="280" style="border:0"
+                loading="lazy" allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=204+High+St,+Waterford,+PA+16441&output=embed"></iframe>
+            </div>
+            <p class="small muted">Tap the map for directions.</p>
+          </div>
+          <div class="card">
+            <h3>Call/Text</h3>
+            <p style="font-size:1.15rem;margin:.2rem 0 0"><strong>(814) 679-4030</strong></p>
+            <p class="small muted">Quick questions, stock checks, or event inquiries—call for fastest help.</p>
+          </div>
+          <div class="card">
+            <h3>Hours</h3>
+            <ul class="list">
+              <li><strong>Mon–Fri:</strong> 10:00 AM – 8:00 PM</li>
+              <li><strong>Sat:</strong> 9:00 AM – 8:00 PM</li>
+              <li><strong>Sun:</strong> 10:00 AM – 8:00 PM</li>
+            </ul>
+            <p class="small muted">Owner-operated by <strong>Chris Miller</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <h2>Get in Touch</h2>
+        <form class="card" method="post" action="#">
+          <label class="sr-only" for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required style="width:100%;margin:.3rem 0;padding:.8rem;border-radius:10px;border:1px solid #2a2a2a;background:#111;color:#fff" />
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Email" required style="width:100%;margin:.3rem 0;padding:.8rem;border-radius:10px;border:1px solid #2a2a2a;background:#111;color:#fff" />
+          <label class="sr-only" for="topic">Topic</label>
+          <select id="topic" name="topic" style="width:100%;margin:.3rem 0;padding:.8rem;border-radius:10px;border:1px solid #2a2a2a;background:#111;color:#fff">
+            <option>General Question</option>
+            <option>Event Request</option>
+            <option>Cigar Special Order</option>
+          </select>
+          <label class="sr-only" for="msg">Message</label>
+          <textarea id="msg" name="message" rows="5" placeholder="Tell us what you need…" style="width:100%;margin:.3rem 0;padding:.8rem;border-radius:10px;border:1px solid #2a2a2a;background:#111;color:#fff"></textarea>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap cols">
+      <div>
+        <div class="brand"><b>High Street</b> Smoke Shop</div>
+        <p class="small">Fine cigars, friendly guidance, and events done right.</p>
+      </div>
+      <div>
+        <h3>Age & Safety</h3>
+        <p class="small">21+ only. We check ID for anyone under 30. No online sales.</p>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <p class="small"><a href="#">Facebook</a> · <a href="#">Instagram</a> · <a href="#">Google</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Structured data for local SEO (keep updated) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Store",
+    "name":"High Street Smoke Shop",
+    "description":"Neighborhood smoke shop with a curated cigar selection and event services.",
+    "image":"https://example.com/og-image.jpg",
+    "telephone":"+1-814-679-4030",
+    "address":{"@type":"PostalAddress","streetAddress":"204 High St","addressLocality":"Waterford","addressRegion":"PA","postalCode":"16441","addressCountry":"US"},
+    "sameAs":["https://maps.google.com/?q=204+High+St+Waterford+PA+16441"],
+    "openingHoursSpecification":[
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"20:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"20:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"10:00","closes":"20:00"}],
+    "areaServed":"Local",
+    "makesOffer":{"@type":"Offer","itemOffered":{"@type":"Service","name":"Cigar Event Service","areaServed":"Local"}},
+    "review":[
+      {
+        "@type":"Review",
+        "reviewRating":{"@type":"Rating","ratingValue":"5"},
+        "author":{"@type":"Person","name":"Randy Piper"},
+        "reviewBody":"They always been friendly everytime I go in… I would 100% come back every time."
+      },
+      {
+        "@type":"Review",
+        "reviewRating":{"@type":"Rating","ratingValue":"5"},
+        "author":{"@type":"Person","name":"Local Facebook comment"},
+        "reviewBody":"He opened for me and gave me a sample—tasty and refreshing on a hot day."
+      }
+    ]
+  }
+  </script>
+</body>
+</html>
