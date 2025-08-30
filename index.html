@@ -10,6 +10,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   <link rel="manifest" href="site.webmanifest" />
   <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="preload" as="image" href="assets/img/herolight.jpg"
+        imagesrcset="assets/img/herofull.jpg 2661w, assets/img/herolight.jpg 1079w"
+        imagesizes="100vw" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -37,7 +40,11 @@
 
   <main id="top">
     <section class="hero" aria-label="Hero">
-      <div class="hero-img" aria-hidden="true"></div>
+      <picture class="hero-img" aria-hidden="true">
+        <source srcset="assets/img/herofull.jpg" media="(min-width: 768px)" />
+        <img src="assets/img/herolight.jpg" alt=""
+             width="2661" height="1497" decoding="async" fetchpriority="high" />
+      </picture>
       <div class="wrap">
         <div class="kicker">Neighborhood Humidor • Owner-led • Friendly Guidance</div>
         <h1>Exceptional Cigars. Zero Snobbery.</h1>
